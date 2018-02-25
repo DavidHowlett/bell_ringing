@@ -23,6 +23,8 @@ def swap(change, a, b):
 
 for i in range(3):
     print('Katie is learning quickly')
+    for j in range(3):
+        print('!')
 
 
 print('Go Plain Hunt!')
@@ -38,3 +40,35 @@ for i in range(6):
     print(rounds)
 
 print("That's All!")
+print('')
+print(rounds)
+print(rounds)
+print(rounds)
+
+print('Go Plain Bob Minor!')
+changes = 0
+for lead in range(5):
+    for i in range(5):
+        swap(rounds, 0, 1)
+        swap(rounds, 2, 3)
+        swap(rounds, 4, 5)
+        changes = changes + 1
+        print(rounds)
+        swap(rounds, 1, 2)
+        swap(rounds, 3, 4)
+        changes = changes + 1
+        print(rounds)
+    swap(rounds, 2, 3)
+    swap(rounds, 4, 5)
+    swap(rounds, 0, 1)
+    changes = changes + 1
+    print(rounds)
+    swap(rounds, 2, 3)
+    swap(rounds, 4, 5)
+    changes = changes + 1
+    print(rounds)
+print("That's All!")
+print('We Rang', changes, 'changes')
+
+
+
